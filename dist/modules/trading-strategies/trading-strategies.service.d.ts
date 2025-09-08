@@ -1,0 +1,35 @@
+import { Repository } from 'typeorm';
+import { TradingStrategy, StrategyType } from '../../entities/trading-strategy.entity';
+import { TradingSignal } from '../../entities/trading-signal.entity';
+import { TechnicalIndicatorsResult } from '../../shared/types/trading-strategy.types';
+import { BacktestResult } from '../../entities/backtest-result.entity';
+import { Stock } from '../../entities/stock.entity';
+import { User } from '../../entities/user.entity';
+import { UpdateTradingStrategyDto } from '../../dtos/trading-strategy.dto';
+import { KisApiService } from '../../infrastructure/external/kis-api.service';
+import { TechnicalIndicatorsService } from '../../infrastructure/services/technical-indicators.service';
+export declare class TradingStrategiesService {
+    private tradingStrategyRepository;
+    private tradingSignalRepository;
+    private backtestResultRepository;
+    private stockRepository;
+    private userRepository;
+    private readonly kisApiService;
+    private readonly technicalIndicatorsService;
+    private readonly logger;
+    constructor(tradingStrategyRepository: Repository<TradingStrategy>, tradingSignalRepository: Repository<TradingSignal>, backtestResultRepository: Repository<BacktestResult>, stockRepository: Repository<Stock>, userRepository: Repository<User>, kisApiService: KisApiService, technicalIndicatorsService: TechnicalIndicatorsService);
+    createSimpleStrategy(userId: number, name: string, strategyType?: StrategyType, description?: string): Promise<TradingStrategy>;
+    private generateDefaultConditions;
+    getUserStrategies(userId: number): Promise<TradingStrategy[]>;
+    getStrategy(userId: number, strategyId: number): Promise<TradingStrategy>;
+    updateStrategy(userId: number, strategyId: number, updateStrategyDto: UpdateTradingStrategyDto): Promise<TradingStrategy>;
+    deleteStrategy(userId: number, strategyId: number): Promise<void>;
+    toggleStrategy(userId: number, strategyId: number): Promise<TradingStrategy>;
+    getStrategySignals(userId: number, strategyId: number): Promise<TradingSignal[]>;
+    executeStrategy(strategy: TradingStrategy, user: User, stock: Stock, currentPrice: number, volume: number, indicators: TechnicalIndicatorsResult): Promise<TradingSignal | null>;
+    getActiveStrategies(): Promise<TradingStrategy[]>;
+    private updateStrategyLastExecuted;
+    private evaluateStrategyConditions;
+    generateSignal(strategy: TradingStrategy, stock: Stock, currentPrice: number, volume: number, indicators: TechnicalIndicatorsResult): Promise<TradingSignal | null>;
+    private saveTradingSignal;
+}

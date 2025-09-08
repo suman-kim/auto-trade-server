@@ -1,0 +1,34 @@
+import { PortfolioHolding } from './portfolio-holding.entity';
+import { Transaction } from './transaction.entity';
+import { TradingSignal } from './trading-signal.entity';
+import { PriceAlert } from './price-alert.entity';
+export declare class Stock {
+    id: number;
+    symbol: string;
+    companyName: string;
+    name: string;
+    sector: string;
+    industry: string;
+    exchange: string;
+    currency: string;
+    currentPrice: number;
+    previousClose: number;
+    high: number;
+    low: number;
+    bidPrice: number;
+    askPrice: number;
+    volume: number;
+    marketCap: number;
+    peRatio: number;
+    dividendYield: number;
+    kisNightCode: string;
+    kisDayCode: string;
+    lastUpdated: Date;
+    portfolioHoldings: PortfolioHolding[];
+    transactions: Transaction[];
+    tradingSignals: TradingSignal[];
+    priceAlerts: PriceAlert[];
+    get priceChange(): number;
+    get priceChangeDirection(): 'up' | 'down' | 'unchanged';
+    isActive(): boolean;
+}

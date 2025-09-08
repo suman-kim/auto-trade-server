@@ -1,0 +1,31 @@
+# Task ID: 7
+# Title: 자동매매 전략 시스템
+# Status: done
+# Dependencies: 3, 4
+# Priority: high
+# Description: 자동매매 전략 정의, 관리, 실행 기능 구현
+# Details:
+사용자가 정의할 수 있는 자동매매 전략을 관리하는 시스템을 구현합니다. 전략 생성, 수정, 활성화/비활성화 기능을 포함합니다.
+
+# Test Strategy:
+전략 CRUD API 테스트, 전략 활성화/비활성화 테스트
+
+# Subtasks:
+## 1. 전략 엔티티 및 DTO 생성 [done]
+### Dependencies: None
+### Description: TradingStrategy 엔티티와 관련 DTO 생성
+### Details:
+자동매매 전략을 저장할 TradingStrategy 엔티티를 생성하고, 전략 생성, 수정을 위한 DTO를 정의합니다.
+
+## 2. 전략 CRUD 서비스 구현 [done]
+### Dependencies: None
+### Description: 전략 생성, 수정, 삭제, 조회 기능
+### Details:
+자동매매 전략의 기본 CRUD 기능을 구현합니다. 사용자별 전략 관리 기능을 포함합니다.
+
+## 3. 전략 활성화/비활성화 기능 [done]
+### Dependencies: None
+### Description: 전략 실행 상태 관리 기능
+### Details:
+전략을 활성화/비활성화하는 기능을 구현합니다. 활성화된 전략만 자동매매 엔진에서 실행되도록 합니다.
+

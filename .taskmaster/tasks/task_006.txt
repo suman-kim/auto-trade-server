@@ -1,0 +1,31 @@
+# Task ID: 6
+# Title: 거래 내역 관리 시스템
+# Status: done
+# Dependencies: 3, 4
+# Priority: high
+# Description: 매수/매도 거래 내역 저장, 조회, 분석 기능
+# Details:
+사용자의 매수/매도 거래 내역을 저장하고 관리하는 시스템을 구현합니다. 거래 히스토리 조회, 거래 분석 기능을 포함합니다.
+
+# Test Strategy:
+거래 내역 저장 및 조회 API 테스트, 거래 분석 기능 테스트
+
+# Subtasks:
+## 1. 거래 내역 엔티티 및 DTO 생성 [done]
+### Dependencies: None
+### Description: Transaction 엔티티와 관련 DTO 생성
+### Details:
+거래 내역을 저장할 Transaction 엔티티를 생성하고, 거래 생성, 조회를 위한 DTO를 정의합니다.
+
+## 2. 거래 내역 CRUD 서비스 구현 [done]
+### Dependencies: None
+### Description: 거래 내역 생성, 조회, 수정, 삭제 기능
+### Details:
+거래 내역의 기본 CRUD 기능을 구현합니다. 사용자별 거래 내역 관리 기능을 포함합니다.
+
+## 3. 거래 분석 서비스 구현 [done]
+### Dependencies: None
+### Description: 거래 패턴 분석, 수익성 분석 기능
+### Details:
+거래 패턴 분석, 수익성 분석, 거래 통계를 제공하는 서비스를 구현합니다.
+

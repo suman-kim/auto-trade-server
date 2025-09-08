@@ -1,0 +1,37 @@
+# Task ID: 4
+# Title: 주식 데이터 수집 및 관리 시스템
+# Status: done
+# Dependencies: 2
+# Priority: high
+# Description: 테슬라 주식 데이터 수집, 저장, 관리 기능 구현
+# Details:
+외부 API를 통해 테슬라 주식 데이터를 수집하고 저장하는 시스템을 구현합니다. 실시간 가격, 거래량, 차트 데이터를 관리합니다.
+
+# Test Strategy:
+주식 데이터 수집 API 테스트, 데이터 저장 및 조회 테스트, 실시간 데이터 업데이트 테스트
+
+# Subtasks:
+## 1. 주식 데이터 엔티티 및 DTO 생성 [done]
+### Dependencies: None
+### Description: Stock, StockPrice 엔티티와 관련 DTO 생성
+### Details:
+주식 정보와 가격 데이터를 저장할 엔티티를 생성하고, 데이터 수집 및 조회를 위한 DTO를 정의합니다.
+
+## 2. 외부 주식 API 연동 [done]
+### Dependencies: None
+### Description: Alpha Vantage 또는 Yahoo Finance API 연동
+### Details:
+테슬라 주식 데이터를 제공하는 외부 API를 연동합니다. API 키 관리, 요청 제한 처리, 에러 핸들링을 구현합니다.
+
+## 3. 주식 데이터 수집 서비스 구현 [done]
+### Dependencies: None
+### Description: 정기적인 주식 데이터 수집 및 저장 기능
+### Details:
+스케줄러를 사용하여 정기적으로 주식 데이터를 수집하고 저장하는 서비스를 구현합니다.
+
+## 4. 주식 데이터 조회 API 구현 [done]
+### Dependencies: None
+### Description: 주식 정보 및 가격 데이터 조회 엔드포인트
+### Details:
+주식 정보 조회, 가격 히스토리 조회, 실시간 가격 조회 API를 구현합니다.
+

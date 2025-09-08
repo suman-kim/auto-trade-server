@@ -1,0 +1,31 @@
+# Task ID: 8
+# Title: 자동매매 엔진 구현
+# Status: done
+# Dependencies: 4, 7
+# Priority: high
+# Description: 자동매매 전략 실행, 매수/매도 신호 생성, 주문 처리
+# Details:
+정의된 자동매매 전략을 실행하는 엔진을 구현합니다. 실시간 주식 데이터를 분석하여 매수/매도 신호를 생성하고 주문을 처리합니다.
+
+# Test Strategy:
+자동매매 엔진 실행 테스트, 매수/매도 신호 생성 테스트, 주문 처리 테스트
+
+# Subtasks:
+## 1. 전략 실행 엔진 구현 [done]
+### Dependencies: None
+### Description: 활성화된 전략을 실행하는 엔진
+### Details:
+활성화된 자동매매 전략을 주기적으로 실행하는 엔진을 구현합니다. 스케줄러를 사용하여 정기적으로 전략을 평가합니다.
+
+## 2. 매수/매도 신호 생성 로직 [done]
+### Dependencies: None
+### Description: 전략 조건에 따른 매수/매도 신호 생성
+### Details:
+정의된 전략 조건에 따라 매수/매도 신호를 생성하는 로직을 구현합니다. 다양한 기술적 지표를 활용합니다.
+
+## 3. 주문 처리 시스템 구현 [done]
+### Dependencies: None
+### Description: 매수/매도 주문 생성 및 처리
+### Details:
+매수/매도 신호에 따라 실제 주문을 생성하고 처리하는 시스템을 구현합니다. 주문 상태 관리 기능을 포함합니다.
+

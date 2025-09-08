@@ -1,0 +1,30 @@
+import { KisWebSocketService } from '../../infrastructure/external/kis-websocket.service';
+import { OverseasStockRealTimeTrade } from '../../infrastructure/external/dto/response/ws-response.dto';
+import { KisSchedules } from '../../infrastructure/external/kis-schedules';
+import { OverseasStockCurrentPriceResponse } from '../../infrastructure/external/dto/response/response.dto';
+import { TechnicalIndicatorsService } from '../../infrastructure/services/technical-indicators.service';
+import { TradingStrategiesService } from '../trading-strategies/trading-strategies.service';
+import { KisApiService } from '../../infrastructure/external/kis-api.service';
+import { TransactionsService } from '../transactions/transactions.service';
+import { StocksService } from '../stocks/stocks.service';
+import { PortfoliosService } from '../portfolios/portfolios.service';
+import { UsersService } from '../users/users.service';
+import { OrderService } from '../order/order.service';
+export declare class RealtimeEngineService {
+    private readonly kisWebSocketService;
+    private readonly kisSchedules;
+    private readonly technicalIndicatorsService;
+    private readonly tradingStrategiesService;
+    private readonly kisApiService;
+    private readonly transactionsService;
+    private readonly stocksService;
+    private readonly portfoliosService;
+    private readonly userService;
+    private readonly orderService;
+    private readonly logger;
+    constructor(kisWebSocketService: KisWebSocketService, kisSchedules: KisSchedules, technicalIndicatorsService: TechnicalIndicatorsService, tradingStrategiesService: TradingStrategiesService, kisApiService: KisApiService, transactionsService: TransactionsService, stocksService: StocksService, portfoliosService: PortfoliosService, userService: UsersService, orderService: OrderService);
+    private setupEventListeners;
+    processTradeData(data: OverseasStockRealTimeTrade | OverseasStockCurrentPriceResponse): Promise<void>;
+    private isOverseasStockRealTimeTrade;
+    private processBalanceData;
+}

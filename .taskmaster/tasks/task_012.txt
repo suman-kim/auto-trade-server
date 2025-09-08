@@ -1,0 +1,31 @@
+# Task ID: 12
+# Title: 보안 강화 및 검증
+# Status: pending
+# Dependencies: 3, 10
+# Priority: high
+# Description: 입력 검증, SQL 인젝션 방지, XSS 방지, CORS 설정
+# Details:
+애플리케이션의 보안을 강화합니다. 입력 검증, SQL 인젝션 방지, XSS 방지, CORS 설정, rate limiting 등을 구현합니다.
+
+# Test Strategy:
+보안 취약점 테스트, 입력 검증 테스트, rate limiting 테스트
+
+# Subtasks:
+## 1. 입력 검증 강화 [pending]
+### Dependencies: None
+### Description: class-validator를 사용한 DTO 검증 강화
+### Details:
+class-validator를 사용하여 모든 DTO에 대한 입력 검증을 강화합니다. 사용자 정의 검증 규칙을 추가합니다.
+
+## 2. SQL 인젝션 및 XSS 방지 [pending]
+### Dependencies: None
+### Description: TypeORM의 파라미터 바인딩 활용, XSS 방지
+### Details:
+TypeORM의 파라미터 바인딩을 활용하여 SQL 인젝션을 방지하고, XSS 공격을 방지하는 기능을 구현합니다.
+
+## 3. CORS 및 Rate Limiting 설정 [pending]
+### Dependencies: None
+### Description: CORS 정책 설정, API 요청 제한 구현
+### Details:
+CORS 정책을 설정하고, API 요청에 대한 rate limiting을 구현합니다.
+

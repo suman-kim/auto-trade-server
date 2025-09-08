@@ -1,0 +1,31 @@
+# Task ID: 2
+# Title: 데이터베이스 설계 및 PostgreSQL 설정
+# Status: done
+# Dependencies: 1
+# Priority: high
+# Description: PostgreSQL 데이터베이스 설계, 스키마 정의, 연결 설정
+# Details:
+주식 자동매매 시스템에 필요한 데이터베이스 스키마를 설계하고, PostgreSQL 데이터베이스를 설정합니다. 사용자, 주식 정보, 거래 내역, 자동매매 설정 등을 저장할 테이블을 생성합니다.
+
+# Test Strategy:
+데이터베이스 연결 테스트 및 기본 CRUD 작업 수행으로 스키마가 올바르게 작동하는지 확인
+
+# Subtasks:
+## 1. PostgreSQL 데이터베이스 설치 및 설정 [done]
+### Dependencies: None
+### Description: PostgreSQL 설치 및 데이터베이스 생성
+### Details:
+PostgreSQL을 설치하고 auto_trade_db 데이터베이스를 생성합니다. 필요한 사용자 권한을 설정합니다.
+
+## 2. 데이터베이스 스키마 설계 [done]
+### Dependencies: None
+### Description: 주식 자동매매 시스템에 필요한 테이블 설계
+### Details:
+users, stocks, transactions, trading_strategies, portfolio 테이블을 설계하고 ERD를 작성합니다.
+
+## 3. TypeORM 설정 및 엔티티 생성 [done]
+### Dependencies: None
+### Description: TypeORM을 사용한 데이터베이스 연결 및 엔티티 정의
+### Details:
+TypeORM을 설치하고 설정하며, 설계한 스키마에 맞는 엔티티 클래스들을 생성합니다.
+

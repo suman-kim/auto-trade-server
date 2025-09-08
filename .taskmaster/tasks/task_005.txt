@@ -1,0 +1,37 @@
+# Task ID: 5
+# Title: 포트폴리오 관리 시스템
+# Status: done
+# Dependencies: 3, 4
+# Priority: high
+# Description: 사용자 포트폴리오 관리, 보유 주식 추적, 수익률 계산
+# Details:
+사용자의 포트폴리오를 관리하는 시스템을 구현합니다. 보유 주식 추적, 수익률 계산, 포트폴리오 분석 기능을 포함합니다.
+
+# Test Strategy:
+포트폴리오 생성, 수정, 조회 API 테스트, 수익률 계산 정확성 테스트
+
+# Subtasks:
+## 1. 포트폴리오 엔티티 및 DTO 생성 [done]
+### Dependencies: None
+### Description: Portfolio, PortfolioItem 엔티티와 관련 DTO 생성
+### Details:
+포트폴리오와 포트폴리오 아이템을 저장할 엔티티를 생성하고, 관련 DTO를 정의합니다.
+
+## 2. 포트폴리오 CRUD 서비스 구현 [done]
+### Dependencies: None
+### Description: 포트폴리오 생성, 수정, 삭제, 조회 기능
+### Details:
+포트폴리오의 기본 CRUD 기능을 구현합니다. 사용자별 포트폴리오 관리 기능을 포함합니다.
+
+## 3. 수익률 계산 서비스 구현 [done]
+### Dependencies: None
+### Description: 포트폴리오 수익률, 개별 주식 수익률 계산
+### Details:
+포트폴리오 전체 수익률과 개별 주식 수익률을 계산하는 서비스를 구현합니다. 실시간 가격을 반영한 계산을 수행합니다.
+
+## 4. 포트폴리오 분석 기능 구현 [done]
+### Dependencies: None
+### Description: 포트폴리오 성과 분석, 차트 데이터 생성
+### Details:
+포트폴리오 성과 분석, 위험도 계산, 차트 데이터 생성을 위한 기능을 구현합니다.
+

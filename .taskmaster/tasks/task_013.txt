@@ -1,0 +1,31 @@
+# Task ID: 13
+# Title: 배포 및 운영 환경 설정
+# Status: pending
+# Dependencies: 10, 11, 12
+# Priority: medium
+# Description: Docker 컨테이너화, 환경 변수 관리, 배포 스크립트
+# Details:
+애플리케이션을 배포하고 운영할 수 있는 환경을 설정합니다. Docker 컨테이너화, 환경 변수 관리, 배포 스크립트를 구현합니다.
+
+# Test Strategy:
+Docker 빌드 및 실행 테스트, 환경 변수 로드 테스트
+
+# Subtasks:
+## 1. Docker 컨테이너화 [pending]
+### Dependencies: None
+### Description: Dockerfile 및 docker-compose.yml 생성
+### Details:
+애플리케이션과 PostgreSQL을 위한 Dockerfile과 docker-compose.yml을 생성합니다.
+
+## 2. 환경 변수 관리 [pending]
+### Dependencies: None
+### Description: 개발/운영 환경별 환경 변수 설정
+### Details:
+개발, 테스트, 운영 환경별로 환경 변수를 관리하는 시스템을 구현합니다.
+
+## 3. 배포 스크립트 생성 [pending]
+### Dependencies: None
+### Description: 자동화된 배포 스크립트 구현
+### Details:
+애플리케이션 배포를 자동화하는 스크립트를 생성합니다. 데이터베이스 마이그레이션, 애플리케이션 시작을 포함합니다.
+

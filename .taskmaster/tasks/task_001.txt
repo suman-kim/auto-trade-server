@@ -1,0 +1,31 @@
+# Task ID: 1
+# Title: 프로젝트 초기 설정 및 개발 환경 구성
+# Status: done
+# Dependencies: None
+# Priority: high
+# Description: NestJS 프로젝트 초기화, TypeScript 설정, 개발 환경 구성
+# Details:
+NestJS CLI를 사용하여 프로젝트를 초기화하고, TypeScript 설정, ESLint, Prettier, Jest 테스트 환경을 구성합니다. 클린아키텍처 패턴을 위한 폴더 구조를 설정하고, PostgreSQL 연결을 위한 기본 설정을 완료합니다.
+
+# Test Strategy:
+프로젝트 빌드 및 기본 테스트 실행으로 개발 환경이 올바르게 구성되었는지 확인
+
+# Subtasks:
+## 1. NestJS 프로젝트 초기화 [done]
+### Dependencies: None
+### Description: NestJS CLI를 사용하여 새 프로젝트 생성
+### Details:
+nest new auto-trade-server 명령어로 프로젝트를 생성하고, 필요한 기본 의존성을 설치합니다.
+
+## 2. TypeScript 및 개발 도구 설정 [done]
+### Dependencies: None
+### Description: ESLint, Prettier, Jest 설정 구성
+### Details:
+코드 품질을 위한 ESLint와 Prettier 설정, Jest를 사용한 테스트 환경을 구성합니다.
+
+## 3. 클린아키텍처 폴더 구조 설정 [done]
+### Dependencies: None
+### Description: 도메인, 애플리케이션, 인프라 레이어 구조 생성
+### Details:
+src 폴더 내에 domain, application, infrastructure 레이어를 구분하여 클린아키텍처 패턴에 맞는 폴더 구조를 생성합니다.
+

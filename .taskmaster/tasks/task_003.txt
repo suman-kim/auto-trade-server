@@ -1,0 +1,37 @@
+# Task ID: 3
+# Title: 사용자 인증 및 권한 관리 시스템
+# Status: done
+# Dependencies: 2
+# Priority: high
+# Description: JWT 기반 인증, 사용자 등록/로그인, 권한 관리 구현
+# Details:
+JWT를 사용한 사용자 인증 시스템을 구현합니다. 사용자 등록, 로그인, 비밀번호 암호화, 토큰 관리, 권한 검증 기능을 포함합니다.
+
+# Test Strategy:
+사용자 등록/로그인 API 테스트, JWT 토큰 검증, 권한 기반 접근 제어 테스트
+
+# Subtasks:
+## 1. 사용자 엔티티 및 DTO 생성 [done]
+### Dependencies: None
+### Description: User 엔티티와 관련 DTO 클래스 생성
+### Details:
+User 엔티티를 생성하고, 회원가입, 로그인, 사용자 정보 수정을 위한 DTO 클래스들을 정의합니다.
+
+## 2. JWT 인증 모듈 구현 [done]
+### Dependencies: None
+### Description: JWT 토큰 생성, 검증, 갱신 기능 구현
+### Details:
+@nestjs/jwt를 사용하여 JWT 토큰 생성, 검증, 갱신 기능을 구현합니다. 토큰 만료 시간과 보안 설정을 구성합니다.
+
+## 3. 인증 가드 및 데코레이터 구현 [done]
+### Dependencies: None
+### Description: JWT 인증 가드와 @Auth() 데코레이터 생성
+### Details:
+JWT 토큰을 검증하는 가드와 컨트롤러에서 사용할 @Auth() 데코레이터를 구현합니다.
+
+## 4. 사용자 서비스 및 컨트롤러 구현 [done]
+### Dependencies: None
+### Description: 회원가입, 로그인, 사용자 정보 관리 API 구현
+### Details:
+사용자 등록, 로그인, 정보 조회, 수정, 삭제 기능을 구현합니다. bcrypt를 사용하여 비밀번호를 암호화합니다.
+
